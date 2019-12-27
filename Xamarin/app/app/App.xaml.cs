@@ -8,11 +8,15 @@ namespace app
 {
     public partial class App : Application
     {
+        //VERIFICAR CONEXION    //////////////////////////////////
+        //public PhoneBookPage LoginPage { get; }
+
         public App()
         {
             InitializeComponent();
 
             MainPage = new LoginPage();
+           // LoginPage = new PhoneBookPage();
         }
 
         protected override void OnStart()
