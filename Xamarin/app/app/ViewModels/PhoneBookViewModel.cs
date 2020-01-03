@@ -34,12 +34,15 @@
                 await Application.Current.MainPage.DisplayAlert("Internet Error Connection",connection.Message,"Accept");
                 return;
             }
-            var response = await apiservice.GetList<Phone>(
-                "https://localhost:50754/",
-                "api/",
+            var response = apiservice.GetList<Phone>(
+                "http://localhost:64131/",
+                "API/",
                 "phones"
                 );
+            
         }
         #endregion
     }
 }
+
+
